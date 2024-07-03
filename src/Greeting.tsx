@@ -1,12 +1,15 @@
 
 
 type nameProps = {
-name:string
+name:string,
+messageCount:number
 }
 
 const Greeting = (props: nameProps) => {
   return (
-    <div>Hello, I'm {props.name}.</div>
+    <div>
+        <h2>Welcome {props.name}. You have {props.messageCount} unread messages.</h2>
+    </div>
   )
 }
 
